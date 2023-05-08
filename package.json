@@ -1,7 +1,7 @@
 {
   "name": "listatarefas",
   "version": "0.1.0",
-  "homepage": "github-page/",
+  "homepage": "React-ListaDeTarefas/",
   "private": true,
   "dependencies": {
     "@testing-library/react": "^13.4.0",
