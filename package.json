@@ -1,6 +1,7 @@
 {
   "name": "listatarefas",
   "version": "0.1.0",
+  "homepage": "github-page/",
   "private": true,
   "dependencies": {
     "@testing-library/react": "^13.4.0",
