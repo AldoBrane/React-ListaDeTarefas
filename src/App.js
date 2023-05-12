@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
+  function addItem(){
+    if(!newItem){
+        alert("Nenhuma nova tarefa foi inserida");
+        return;
+    }
+    const item = {
+        id: Math.floor(Math.random() * 1000),
+        value: newItem
+    };
+    setItems(oldList => [...oldList, item]);
+    setNewItem("");
+  }
+  function deleta(id){
+    const newArray = items.filter(item => item.id !== id);
+    setItems(newArray);
+  }
+  const [newItem, setNewItem] = useState("");
+  const [items, setItems] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="principal">
+      <h1>Lista de Tarefas</h1>
+      <input 
+        class="listainput"
+        type="text" 
+        placeholder="Escreva a nova tarefa" 
+        value={newItem}
+        onChange={e => setNewItem(e.target.value)}
+      />
+      <button class="listabotao" onClick={() => addItem() }>Adicionar</button>
+      <ul>
+        {items.map(item => {
+          return(
+            <li class="tarefa" key={item.id}>{item.value} <button class="listabotao" onClick={() => deleta(item.id)}>Feito</button></li>
+          )
+        })}
+      </ul>
     </div>
   );
 }
