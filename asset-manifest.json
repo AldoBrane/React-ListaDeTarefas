@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/React-ListaDeTarefas/static/css/main.58b0217d.css",
-    "main.js": "/React-ListaDeTarefas/static/js/main.c84bc296.js",
-    "static/js/787.804e5928.chunk.js": "/React-ListaDeTarefas/static/js/787.804e5928.chunk.js",
-    "static/media/logo.svg": "/React-ListaDeTarefas/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/React-ListaDeTarefas/static/css/main.971d25dd.css",
+    "main.js": "/React-ListaDeTarefas/static/js/main.0be5d223.js",
     "index.html": "/React-ListaDeTarefas/index.html",
-    "main.58b0217d.css.map": "/React-ListaDeTarefas/static/css/main.58b0217d.css.map",
-    "main.c84bc296.js.map": "/React-ListaDeTarefas/static/js/main.c84bc296.js.map",
-    "787.804e5928.chunk.js.map": "/React-ListaDeTarefas/static/js/787.804e5928.chunk.js.map"
+    "main.971d25dd.css.map": "/React-ListaDeTarefas/static/css/main.971d25dd.css.map",
+    "main.0be5d223.js.map": "/React-ListaDeTarefas/static/js/main.0be5d223.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b0217d.css",
-    "static/js/main.c84bc296.js"
+    "static/css/main.971d25dd.css",
+    "static/js/main.0be5d223.js"
   ]
 }
